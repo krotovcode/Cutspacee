@@ -1,0 +1,21 @@
+.navigation-list {
+    ul {
+ 
+        display: flex;
+    }
+    li:not(:last-child)  {
+        margin-right: 42px;
+    }
+    a {
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            color: $accent-color;
+        }
+        &.active {
+            color: $accent-color;
+            font-weight: 700;
+        }
+    }
+    
+}
